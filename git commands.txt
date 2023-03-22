@@ -1,0 +1,25 @@
+git init
+
+git add golden.md
+
+git commit -m "first commit from GOlden"
+
+git branch -M main
+
+git remote add origin git@github.com:NobleOsinachi/vidly-react.git
+
+git add .
+
+git commit -m "descriptive commit message"
+
+git push -u origin main
+
+git remote add origin git@github.com:NobleOsinachi/vidly-react.git
+
+git branch -M main
+
+git push -u origin main
+y
+
+
+
