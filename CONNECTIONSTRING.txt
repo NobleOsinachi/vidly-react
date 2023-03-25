@@ -1,0 +1,21 @@
+(LOCALDB)\MSSQLLOCALDB
+(LOCALDB)\ProjectsV13
+
+DESKTOP-2VL7DK2\SQLSERVEREXPRESS
+LOCALHOST\SQLSERVEREXPRESS
+
+
+
+Enable-Migrations  -D -EnableAutomaticMigrations -Force -Verbose
+
+Add-Migration "Initial Create" -Force -Verbose 
+
+Update-Database -Verbose
+
+Get-Migrations -Verbose 
+
+
+
+sqllocaldb stop
+
+sqllocaldb delete MSSQLLocalDB
