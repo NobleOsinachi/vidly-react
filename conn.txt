@@ -1,0 +1,11 @@
+Data Source=(localdb)\ProjectsV13;Initial Catalog=Database1;Integrated Security=True;Pooling=False;Connect Timeout=30
+
+
+
+Data Source=(localdb)\ProjectsV13;Initial Catalog=Database1;Integrated Security=True;Pooling=False;Connect Timeout=30
+
+
+
+
+Data Source=LOCALHOST\MSSQLSERVER2014;Initial Catalog=Database1;Integrated Security=True;Persist Security Info=False;Pooling=False;MultipleActiveResultSets=False;Connect Timeout=60;Encrypt=False;TrustServerCertificate=False
+
