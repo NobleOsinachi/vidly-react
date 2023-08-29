@@ -3,10 +3,7 @@ import './App.css';
 import Counters from "./components/counters";
 import NavBar from "./components/navbar";
 import React, { Component } from 'react';
-import { divide } from "lodash";
-import { Movie } from "@mui/icons-material";
 import Movies from "./components/movies";
-
 
 class App extends Component {
   state = {
@@ -22,17 +19,16 @@ class App extends Component {
   constructor(props) {
     super(props);
     console.log(this.props);
-
   }
 
-  // called after component is renderd ninto dom
-  // make ajx calls
+  // called after component is renderd into dom
+  // make ajax calls here
   componentDidMount() {
     // ajax call
 
     // this.setState({ movies });
 
-    console.log("App Mounted");
+    // console.log("App Mounted");
   }
 
   handleIncrement = (counter) => {
@@ -60,8 +56,6 @@ class App extends Component {
       c.value = 0;
       return c;
     });
-
-
     this.setState({ counters: counters });
   };
 
@@ -72,33 +66,22 @@ class App extends Component {
   };
 
   /*
-  contrctor
+  constructor
   
   rendered
   
   mounted
   
-  
-  when compontne is rendered, all it children are rendered recurively
-
+  when a component is rendered, all its children are rendered recursively
   */
 
-
-
   render() {
-
-
-    console.log("App Rendered");
+    // console.log("App Rendered");
     return (
-
       <React.Fragment>
-
-
         <div className="container">
           <Movies />
         </div>
-
-
 
         <NavBar totalCounters={this.state.counters.filter(c => c.value > 0).length} />
 
@@ -111,8 +94,6 @@ class App extends Component {
             onIncrement={this.handleIncrement}
             onDecrement={this.handleDecrement}
           />
-
-          {/* <Movies /> */}
 
         </main>
       </React.Fragment >
