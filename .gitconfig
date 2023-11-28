@@ -1,2 +1,0 @@
-[core]
-    sshCommand = ssh -i ~/.ssh/id_rsa_NobleOsinachi-vidly-react
