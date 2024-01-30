@@ -18,17 +18,14 @@ class App extends Component {
   // set state directly, add props as params
   constructor(props) {
     super(props);
-    console.log(this.props);
+    // console.log(this.props);
   }
 
-  // called after component is renderd into dom
-  // make ajax calls here
   componentDidMount() {
-    // ajax call
+    // called after component is renderd into dom
+    // make ajax calls here
 
     // this.setState({ movies });
-
-    // console.log("App Mounted");
   }
 
   handleIncrement = (counter) => {
@@ -67,16 +64,16 @@ class App extends Component {
 
   /*
   constructor
-  
+
   rendered
-  
+
   mounted
-  
+
   when a component is rendered, all its children are rendered recursively
   */
 
   render() {
-    // console.log("App Rendered");
+
     return (
       <React.Fragment>
         <div className="container">

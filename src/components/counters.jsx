@@ -17,7 +17,7 @@ class Counters extends Component {
                     Reset
                 </button>
 
-                {this.props.counters.map(counter => (
+                {counters.map(counter => (
                     <Counter
                         key={counter.id}
 
